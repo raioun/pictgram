@@ -4,4 +4,6 @@ class User < ApplicationRecord
   # validates :password_digest, presence: true, format: { with: /\A[a-z\d]{8,100}+\z/i }
   
   has_secure_password
+  
+  has_many :topics
 end
